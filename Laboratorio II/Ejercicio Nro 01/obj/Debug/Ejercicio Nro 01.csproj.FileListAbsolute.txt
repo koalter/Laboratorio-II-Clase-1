@@ -1,0 +1,7 @@
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\bin\Debug\Ejercicio Nro 01.exe.config
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\bin\Debug\Ejercicio Nro 01.exe
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\bin\Debug\Ejercicio Nro 01.pdb
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\obj\Debug\Ejercicio Nro 01.csprojAssemblyReference.cache
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\obj\Debug\Ejercicio Nro 01.csproj.CoreCompileInputs.cache
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\obj\Debug\Ejercicio Nro 01.exe
+D:\###CEA\Laboratorio II\Ejercicio Nro 01\obj\Debug\Ejercicio Nro 01.pdb
