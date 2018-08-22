@@ -11,6 +11,7 @@ namespace Ejercicio_Nro_01
         static void Main(string[] args)
         {
             int numero;
+            bool esNumero;
             const int length = 5;
             int maximo = 0;
             int minimo = 0;
@@ -20,24 +21,28 @@ namespace Ejercicio_Nro_01
             for (int i = 0; i < 5; i++)
             {
                 Console.Write("Ingrese un numero: ");
-                numero = Convert.ToInt32(Console.ReadLine());
-                if (i == 0)
+                esNumero = int.TryParse(Console.ReadLine(), out numero);
+                if (esNumero)
                 {
-                    maximo = numero;
-                    minimo = numero;
-                }
-                else
-                {
-                    if (numero > maximo)
+                    if (i == 0)
                     {
                         maximo = numero;
-                    }
-                    else if (numero < minimo)
-                    {
                         minimo = numero;
                     }
+                    else
+                    {
+                        if (numero > maximo)
+                        {
+                            maximo = numero;
+                        }
+                        else if (numero < minimo)
+                        {
+                            minimo = numero;
+                        }
+                    }
+                    total = total + numero;
                 }
-                total = total + numero;
+                
             }
             
             promedio = total / length;

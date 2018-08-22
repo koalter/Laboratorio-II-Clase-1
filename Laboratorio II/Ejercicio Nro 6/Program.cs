@@ -4,40 +4,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ejercicio_Nro_03
+namespace Ejercicio_Nro_6
 {
     class Program
     {
         static void Main(string[] args)
         {
             int numero;
-            bool esPrimo = true;
 
             Console.Write("Ingrese un numero: ");
             bool esNumero = int.TryParse(Console.ReadLine(), out numero);
 
             if (esNumero)
             {
-                Console.WriteLine("");
-                Console.WriteLine("Numeros primos encontrados:");
-                for (int i = 1; i <= numero; i++)
+                if (numero % 4 == 0)
                 {
-                    for (int j = 2; j < i; j++)
+                    if (numero % 100 == 0)
                     {
-                        if (i % j == 0)
+                        if (numero % 400 == 0)
                         {
-                            esPrimo = false;
-                            break;
+                            Console.WriteLine("\nEs bisiesto!");
                         }
-                    }
-                    if (esPrimo)
-                    {
-                        Console.Write("{0}, ", i);
+                        else
+                        {
+                            Console.WriteLine("\nNo es bisiesto!");
+                        }
                     }
                     else
                     {
-                        esPrimo = true;
+                        Console.WriteLine("\nEs bisiesto!");
                     }
+                }
+                else
+                {
+                    Console.WriteLine("\nNo es bisiesto!");
                 }
             }
 
