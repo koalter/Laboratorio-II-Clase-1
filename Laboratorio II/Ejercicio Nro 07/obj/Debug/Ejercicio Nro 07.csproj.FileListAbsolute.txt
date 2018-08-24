@@ -6,3 +6,7 @@ D:\###CEA\Laboratorio II\Ejercicio Nro 07\obj\Debug\Ejercicio Nro 07.exe
 D:\###CEA\Laboratorio II\Ejercicio Nro 07\obj\Debug\Ejercicio Nro 07.pdb
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\obj\Debug\Ejercicio Nro 07.exe
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\obj\Debug\Ejercicio Nro 07.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\bin\Debug\Ejercicio Nro 07.exe.config
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\bin\Debug\Ejercicio Nro 07.exe
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\bin\Debug\Ejercicio Nro 07.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 07\obj\Debug\Ejercicio Nro 07.csprojResolveAssemblyReference.cache
