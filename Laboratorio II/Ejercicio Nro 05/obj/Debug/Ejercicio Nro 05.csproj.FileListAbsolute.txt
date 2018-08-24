@@ -5,3 +5,8 @@ D:\###CEA\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.csprojAssem
 D:\###CEA\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.csproj.CoreCompileInputs.cache
 D:\###CEA\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.exe
 D:\###CEA\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 05\bin\Debug\Ejercicio Nro 05.exe.config
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 05\bin\Debug\Ejercicio Nro 05.exe
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 05\bin\Debug\Ejercicio Nro 05.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.exe
+C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 05\obj\Debug\Ejercicio Nro 05.pdb

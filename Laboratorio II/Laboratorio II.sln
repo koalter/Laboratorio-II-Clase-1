@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2047
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 01", "Ejercicio Nro 01\Ejercicio Nro 01.csproj", "{214C4A8A-4C16-44A4-B1BC-85A26B60CE0E}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 04", "Ejercic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 05", "Ejercicio Nro 05\Ejercicio Nro 05.csproj", "{3E1287D3-6AA0-4504-9970-5D13B791D20D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 6", "Ejercicio Nro 6\Ejercicio Nro 6.csproj", "{9F019A96-55C4-4B21-AB82-BF9A4DC90AD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 06", "Ejercicio Nro 6\Ejercicio Nro 06.csproj", "{9F019A96-55C4-4B21-AB82-BF9A4DC90AD7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio Nro 07", "Ejercicio Nro 07\Ejercicio Nro 07.csproj", "{F62194C6-0379-4724-B7ED-B994447999DF}"
 EndProject
