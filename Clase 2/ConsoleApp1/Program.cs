@@ -11,7 +11,7 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Ejemplo2();
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
         static void Ejemplo()

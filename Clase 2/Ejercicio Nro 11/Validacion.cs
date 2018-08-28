@@ -17,14 +17,18 @@ namespace Ejercicio_Nro_11
         /// <returns></returns>
         public static bool Validar(int valor, int min, int max)
         {
+            bool retorno;
+
             if (valor >= min && valor <= max)
             {
-                return true;
+                retorno = true;
             }
             else
             {
-                return false;
+                retorno = false;
             }
+
+            return retorno;
         }
     }
 }

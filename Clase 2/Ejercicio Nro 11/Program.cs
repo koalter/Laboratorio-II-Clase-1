@@ -10,22 +10,60 @@ namespace Ejercicio_Nro_11
     {
         static void Main(string[] args)
         {
-            const int min = -100;
-            const int max = 100;
             const int length = 10;
-            int[] numero = new int[length];
+            int min = 0;
+            int max = 0;
+            int numero;
+            int total = 0;
+            double promedio;
+            string auxiliarNumero;
+            bool numeroValido;
 
             for (int i = 0; i < length; i++)
             {
-                Console.WriteLine("Ingrese un numero ({0}/{1})", i+1, length);
-                if (int.TryParse(Console.ReadLine(), out numero[i]))
+                do
                 {
-                    if (Validacion.Validar(numero[i], min, max))
+                    Console.Write("Ingrese un numero ({0}/{1}): ", i + 1, length);
+                    auxiliarNumero = Console.ReadLine();
+                    if (int.TryParse(auxiliarNumero, out numero))
                     {
+                        numero = Convert.ToInt32(auxiliarNumero);
+                        numeroValido = Validacion.Validar(numero, -100, 100);
+                    }
+                    else
+                    {
+                        numeroValido = false;
+                    }
 
+                }while (numeroValido == false);
+
+                if (i == 0)
+                {
+                    min = numero;
+                    max = numero;
+                }
+                else
+                {
+                    if (numero < min)
+                    {
+                        min = numero;
+                    }
+                    if (numero > max)
+                    {
+                        max = numero;
                     }
                 }
+
+                total += numero;
             }
+
+            promedio = total / length;
+
+            Console.WriteLine("El numero minimo es: {0}", min);
+            Console.WriteLine("El numero maximo es: {0}", max);
+            Console.WriteLine("El promedio es: {0}", promedio);
+
+            Console.ReadKey();
         }
     }
 }

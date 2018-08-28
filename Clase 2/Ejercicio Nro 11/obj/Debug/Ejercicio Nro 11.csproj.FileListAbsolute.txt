@@ -1,0 +1,6 @@
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\bin\Debug\Ejercicio Nro 11.exe.config
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\bin\Debug\Ejercicio Nro 11.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\bin\Debug\Ejercicio Nro 11.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\obj\Debug\Ejercicio Nro 11.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\obj\Debug\Ejercicio Nro 11.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 11\obj\Debug\Ejercicio Nro 11.csprojResolveAssemblyReference.cache

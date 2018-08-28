@@ -5,3 +5,9 @@ D:\##CEA\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.csproj
 D:\##CEA\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 D:\##CEA\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 D:\##CEA\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
