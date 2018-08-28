@@ -32,6 +32,8 @@ namespace Ejercicio_Nro_10
             }
 
             Console.ReadKey();
+
+            // SIGUE EN CLASE 2...
         }
     }
 }
