@@ -14,7 +14,7 @@ namespace Ejercicio_Nro_12
             string auxiliarNumero;
             int suma = 0;
             bool continuar;
-            char tecla;
+            char letra;
 
             do
             {
@@ -29,9 +29,17 @@ namespace Ejercicio_Nro_12
 
                 suma += numero;
 
-                Console.Write("\nDesea continuar: ");
-                tecla = (char)Console.Read();
-                continuar = ValidarRespuesta.ValidaS_N(tecla);
+                Console.Write("\nDesea continuar? (S/N): ");
+                if (char.TryParse(Console.ReadLine(), out letra) )
+                {
+                    continuar = ValidarRespuesta.ValidaS_N(letra);
+                }
+                else
+                {
+                    continuar = false;
+                }
+                
+                
             } while (continuar == true);
 
             Console.WriteLine("La suma de todos los numeros ingresados es: {0}", suma);
