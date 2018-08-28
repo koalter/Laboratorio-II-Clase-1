@@ -32,7 +32,7 @@ namespace ConsoleApp1
             Automovil auto = new Automovil();
             Automovil.cantidadRuedas = 4;
             Automovil.MostrarCantidadRuedas();
-            auto.Acelerar(80);
+            auto.Acelerar(70);
             auto.Acelerar(35);
             Console.WriteLine("Velocidad: {0}", auto.velocidadActual);
         }

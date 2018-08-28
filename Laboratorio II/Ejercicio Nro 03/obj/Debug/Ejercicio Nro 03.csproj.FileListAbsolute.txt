@@ -9,3 +9,9 @@ C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\bin\Debug\Eje
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\bin\Debug\Ejercicio Nro 03.pdb
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\obj\Debug\Ejercicio Nro 03.exe
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\obj\Debug\Ejercicio Nro 03.pdb
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\bin\Debug\Ejercicio Nro 03.exe.config
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\bin\Debug\Ejercicio Nro 03.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\bin\Debug\Ejercicio Nro 03.pdb
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\obj\Debug\Ejercicio Nro 03.csproj.CoreCompileInputs.cache
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\obj\Debug\Ejercicio Nro 03.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 03\obj\Debug\Ejercicio Nro 03.pdb

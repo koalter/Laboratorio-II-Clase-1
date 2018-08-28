@@ -9,3 +9,10 @@ C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\bin\Debug\Eje
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\bin\Debug\Ejercicio Nro 04.pdb
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.exe
 C:\gitclone\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.pdb
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\bin\Debug\Ejercicio Nro 04.exe.config
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\bin\Debug\Ejercicio Nro 04.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\bin\Debug\Ejercicio Nro 04.pdb
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.csprojAssemblyReference.cache
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.csproj.CoreCompileInputs.cache
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 04\obj\Debug\Ejercicio Nro 04.pdb

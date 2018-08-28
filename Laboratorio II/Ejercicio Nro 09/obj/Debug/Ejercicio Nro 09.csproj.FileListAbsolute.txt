@@ -1,0 +1,6 @@
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\bin\Debug\Ejercicio Nro 09.exe.config
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\bin\Debug\Ejercicio Nro 09.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\bin\Debug\Ejercicio Nro 09.pdb
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\obj\Debug\Ejercicio Nro 09.csproj.CoreCompileInputs.cache
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\obj\Debug\Ejercicio Nro 09.exe
+D:\##CEA\Laboratorio-II-Clase-1\Laboratorio II\Ejercicio Nro 09\obj\Debug\Ejercicio Nro 09.pdb
