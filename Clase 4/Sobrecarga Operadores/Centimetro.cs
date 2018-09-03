@@ -14,5 +14,22 @@ namespace Sobrecarga_Operadores
         {
             this.valor = _valor;
         }
+
+        public static Centimetro operator +(Centimetro centimetro, Metro metro)
+        {
+            centimetro.valor += metro.valor * 100;
+            return centimetro;
+        }
+
+        public static bool operator ==(Centimetro centimetro, Metro metro)
+        {
+            return centimetro.valor == metro.valor * 100;
+
+        }
+
+        public static bool operator !=(Centimetro centimetro, Metro metro)
+        {
+            return !(centimetro.valor == metro.valor * 100);
+        }
     }
 }

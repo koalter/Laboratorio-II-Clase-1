@@ -27,18 +27,26 @@ namespace Ejercicio_Nro_17
         {
             return this.tinta;
         }
-
-        /*
+        
         public bool Pintar(int gasto, out string dibujo)
         {
+            bool retorno;
             dibujo = "*";
-            SetTinta((short)(gasto * (-1)));
-            for (int i = 0; i < gasto; i++)
+            if (this.tinta >= gasto)
             {
-                Console.Write(dibujo);
+                this.tinta -= (short)gasto;
+                for (int i = 0; i < gasto; i++)
+                {
+                    Console.Write(dibujo);
+                }
+                retorno = true;
             }
+            else
+            {
+                retorno = false;
+            }
+            return retorno;
         }
-        */
 
         public void Recargar()
         {

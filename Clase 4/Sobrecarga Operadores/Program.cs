@@ -10,7 +10,11 @@ namespace Sobrecarga_Operadores
     {
         static void Main(string[] args)
         {
+            // Ejemplo de sobrecarga de operador +
             Console.WriteLine((new Metro(5) + new Centimetro(800)).valor);
+
+            // Ejemplo de sobrecarga de los operadores == y !=
+            Console.WriteLine(new Metro(5) == new Centimetro(500));
 
             Console.ReadKey();
         }

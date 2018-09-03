@@ -20,11 +20,22 @@ namespace Sobrecarga_Operadores
         /// </summary>
         /// <param name="metro">Primer operando en metros.</param>
         /// <param name="centimetro">Segundo operando en centimetros.</param>
-        /// <returns></returns>
+        /// <returns>Medida en metros.</returns>
         public static Metro operator +(Metro metro, Centimetro centimetro)
         {
             metro.valor += centimetro.valor / 100;
             return metro;
+        }
+
+        public static bool operator ==(Metro metro, Centimetro centimetro)
+        {
+            return metro.valor == centimetro.valor / 100;
+            
+        }
+
+        public static bool operator !=(Metro metro, Centimetro centimetro)
+        {
+            return !(metro.valor == centimetro.valor / 100);
         }
     }
 }
