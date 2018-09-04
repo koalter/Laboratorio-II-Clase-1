@@ -21,12 +21,18 @@ namespace Sobrecarga_Operadores
         /// <param name="metro">Primer operando en metros.</param>
         /// <param name="centimetro">Segundo operando en centimetros.</param>
         /// <returns>Medida en metros.</returns>
-        public static Metro operator +(Metro metro, Centimetro centimetro)
+        public static Metro operator +(Metro metro, Metro metroDos)
         {
-            metro.valor += centimetro.valor / 100;
+            metro.valor += metroDos.valor;
             return metro;
         }
 
+        /// <summary>
+        /// Sobrecarga del operador igual (==)
+        /// </summary>
+        /// <param name="metro"></param>
+        /// <param name="centimetro"></param>
+        /// <returns></returns>
         public static bool operator ==(Metro metro, Centimetro centimetro)
         {
             return metro.valor == centimetro.valor / 100;
@@ -36,6 +42,16 @@ namespace Sobrecarga_Operadores
         public static bool operator !=(Metro metro, Centimetro centimetro)
         {
             return !(metro.valor == centimetro.valor / 100);
+        }
+
+        public static explicit operator Metro(Centimetro centimetro)
+        {
+            return new Metro(centimetro.valor / 100);
+        }
+
+        public static implicit operator Centimetro(Metro metro)
+        {
+            return new Centimetro(metro.valor * 100);
         }
     }
 }

@@ -21,6 +21,12 @@ namespace Sobrecarga_Operadores
             return centimetro;
         }
 
+        public static Centimetro operator +(Centimetro centimetro, Centimetro centimetroDos)
+        {
+            centimetro.valor += centimetroDos.valor;
+            return centimetro;
+        }
+
         public static bool operator ==(Centimetro centimetro, Metro metro)
         {
             return centimetro.valor == metro.valor * 100;

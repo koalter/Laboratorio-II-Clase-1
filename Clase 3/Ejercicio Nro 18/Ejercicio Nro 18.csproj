@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{557362F6-5AC8-4458-8202-4558B77FE663}</ProjectGuid>
+    <ProjectGuid>{3B0F1569-9103-489E-9DE5-C920516293E6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Ejercicio_Nro_18</RootNamespace>
-    <AssemblyName>Ejercicio_Nro_18</AssemblyName>
+    <RootNamespace>PruebaGeometria</RootNamespace>
+    <AssemblyName>Ejercicio Nro 18</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Geometria.cs" />
+    <Compile Include="PruebaGeometria.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
