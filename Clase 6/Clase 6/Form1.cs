@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clase_6
 {
-    public partial class Form1 : Form
+    public partial class FrmPantalla1 : Form
     {
-        public Form1()
+        public FrmPantalla1()
         {
             InitializeComponent();
         }
@@ -21,11 +21,11 @@ namespace Clase_6
         {
             if (MessageBox.Show("Hola prro", "titulo", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
             {
-                this.button1.Text = "Si";
+                this.btnSalir.Text = "Si";
             }
             else
             {
-                this.button1.Text = "No";
+                this.btnSalir.Text = "No";
             }
         }
 
@@ -42,6 +42,42 @@ namespace Clase_6
             {
                 e.Cancel = true;
             }
+        }
+
+        private void btnMostrar_Click(object sender, EventArgs e)
+        {
+            FrmOwner frmOwner = new FrmOwner();
+            FrmPantalla2 frmPantalla2 = new FrmPantalla2();
+            FrmPantalla2 frmPantalla3 = new FrmPantalla2();
+            FrmPantalla2 frmPantalla4 = new FrmPantalla2();
+            frmOwner.Show();
+            frmPantalla4.MdiParent = this;
+            frmPantalla4.Show();
+            frmPantalla2.Show(frmOwner);
+            frmPantalla3.Show();
+            this.btnMostrar.Text = frmPantalla2.atributoString;
+            frmPantalla2.Owner.Text = "";
+
+        }
+
+        private void btnCascada_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.Cascade);
+        }
+
+        private void btnVertical_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileVertical);
+        }
+
+        private void btnHorizontal_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.TileHorizontal);
+        }
+
+        private void btnArrange_Click(object sender, EventArgs e)
+        {
+            this.LayoutMdi(MdiLayout.ArrangeIcons);
         }
     }
 }
