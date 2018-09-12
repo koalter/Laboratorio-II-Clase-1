@@ -14,7 +14,7 @@ namespace Billetes
 
         // Constructores
         public Dolar() : this(0) { }
-        public Dolar(double _cantidad) : this(_cantidad, 1F) { }
+        public Dolar(double _cantidad) : this(_cantidad, 1) { }
         public Dolar(double _cantidad, float _cotizacion)
         {
             this.cantidad = _cantidad;
