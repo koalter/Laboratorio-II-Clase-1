@@ -9,25 +9,43 @@ namespace Ejercicio_Nro_13
     public class Conversor
     {
         /// <summary>
-        /// Convierte un número de decimal a binario.
+        /// Convierte un número decimal a binario.
         /// </summary>
-        /// <param name="numero">Número a convertir</param>
+        /// <param name="numero">Toma el número en formato decimal y lo convierte.</param>
         /// <returns></returns>
-        public static string DecimalBinario(int numero)
+        public static string DecimalBinario(double numero)
         {
-            string auxiliar = "";
-            int i;
-            for (i = 0; numero > 1; i++)
-            {
-                auxiliar += Convert.ToString(numero % 2);
-                numero /= 2;
-            }
-            auxiliar += Convert.ToString(numero);
-
+            const int precision = 9;
+            int numeroEntero = (int)numero;
+            double numeroConComa = numero - numeroEntero;
+            string parteDecimal = "";
+            string parteEntera = "";
             string retorno = "";
+
+            // Procedimiento para convertir la parte entera
+            int i;
+            for (i = 0; numeroEntero > 1; i++)
+            {
+                parteEntera += (numeroEntero % 2).ToString();
+                numeroEntero /= 2;
+            }
+            parteEntera += numeroEntero.ToString();
+
             for (int j = i; j >= 0; j--)
             {
-                retorno += auxiliar[j];
+                retorno += parteEntera[j];
+            }
+
+            // Procedimiento para convertir la parte decimal.
+            if (numeroConComa != 0)
+            {
+                for (int k = 0; k < precision &&numeroConComa != 0; k++)
+                {
+                    numeroConComa *= 2;
+                    parteDecimal += ((int)numeroConComa).ToString();
+                    numeroConComa -= (int)numeroConComa;
+                }
+                retorno += "," + parteDecimal.TrimEnd('0');
             }
 
             return retorno;
@@ -36,19 +54,38 @@ namespace Ejercicio_Nro_13
         /// <summary>
         /// Convierte un número binario a decimal.
         /// </summary>
-        /// <param name="cadena">Cadena a convertir</param>
+        /// <param name="cadena">El número a convertir debe ser ingresado con , y no con .</param>
         /// <returns></returns>
-        public static int BinarioDecimal(string cadena)
+        public static double BinarioDecimal(string cadena)
         {
-            int length = cadena.Length;
-            int numero = 0;
-            int digito;
+            string strAuxiliar = cadena;
+            long intAuxiliar;
+            double numero = 0;
 
-            for (int i = 1; i <= length; i++)
+            cadena = cadena.Replace('.', ',');
+
+            if (double.TryParse(cadena, out numero) == true)
             {
-                digito = Convert.ToInt32(cadena[length-i]) - 48;
-                // 49 es el ascii de 1, 48 es el ascii de 0
-                numero += digito * Convert.ToInt32((Math.Pow(2, i-1)));
+                // Corro las comas.
+                int cantidadDeComas;
+                for (cantidadDeComas = 0; long.TryParse(strAuxiliar, out intAuxiliar) == false; cantidadDeComas++)
+                {
+                    numero *= 10;
+                    strAuxiliar = numero.ToString();
+                }
+
+                int length = strAuxiliar.Length;
+                int digito;
+                numero = 0;
+
+                for (int i = 1; i <= length; i++)
+                {
+                    // El parámetro del Convert me asegura que se convierta desde el bit menos significativo
+                    // al bit más significativo.
+                    // 49 es el ascii de 1, 48 es el ascii de 0.
+                    digito = Convert.ToInt32(strAuxiliar[length - i]) - 48;
+                    numero += digito * Convert.ToDouble((Math.Pow(2, (i - 1) - cantidadDeComas)));
+                }
             }
 
             return numero;

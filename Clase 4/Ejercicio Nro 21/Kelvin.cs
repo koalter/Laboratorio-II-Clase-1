@@ -10,7 +10,6 @@ namespace Ejercicio_Nro_21
     {
         // Atributos
         double temperatura;
-        static float convRespectoCelsius;
 
         // Constructores
         public Kelvin() : this(0) { }
