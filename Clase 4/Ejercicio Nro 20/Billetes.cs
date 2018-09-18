@@ -182,7 +182,7 @@ namespace Billetes
 
         // Constructores
         public Pesos() : this(0) { }
-        public Pesos(double _cantidad) : this(_cantidad, 17.55F) { }
+        public Pesos(double _cantidad) : this(_cantidad, 40F) { }
         public Pesos(double _cantidad, float _cotizacion)
         {
             this.cantidad = _cantidad;

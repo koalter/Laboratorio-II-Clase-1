@@ -15,17 +15,52 @@ namespace Ejercicio_Nro_20
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Pesos pesos = 17.55;
-            Dolar dolar = 10;
-            Euro euro = 7;
-            // Los numeros ingresados se convierten IMPLICITAMENTE
+            //Pesos pesos = 17.55;
+            //Dolar dolar = 10;
+            //Euro euro = 7;
+            //// Los numeros ingresados se convierten IMPLICITAMENTE
 
-            //dolar = (Dolar)pesos; // convierto los pesos en su valor dolar EXPLICITAMENTE
+            ////dolar = (Dolar)pesos; // convierto los pesos en su valor dolar EXPLICITAMENTE
             
-            Console.WriteLine("Tengo {0} Dolares", dolar.GetCantidad());
-            Console.WriteLine("Que en pesos son: {0}", ((Pesos)dolar).GetCantidad());
+            //Console.WriteLine("Tengo {0} Dolares", dolar.GetCantidad());
+            //Console.WriteLine("Que en pesos son: {0}", ((Pesos)dolar).GetCantidad());
 
-            Console.WriteLine("Si sumo {0} Pesos y {1} Dolares tengo {2} Pesos", pesos.GetCantidad(), dolar.GetCantidad(), (pesos+dolar).GetCantidad());
+            //Console.WriteLine("Si sumo {0} Pesos y {1} Dolares tengo {2} Pesos", pesos.GetCantidad(), dolar.GetCantidad(), (pesos+dolar).GetCantidad());
+
+            //Console.ReadKey();
+        }
+
+        public static void Ejemplo()
+        {
+            Console.Write("Ingrese una cantidad de pesos: $");
+            double aux;
+            if (double.TryParse(Console.ReadLine(), out aux) == true)
+            {
+                Pesos dinero = aux;
+
+                string opcion;
+                do
+                {
+                    Console.WriteLine("Convertir a:");
+                    Console.WriteLine("1. Dolares");
+                    Console.WriteLine("2. Euros");
+                    opcion = Console.ReadLine();
+                    switch (opcion)
+                    {
+                        case "1":
+                            Dolar enDolares = (Dolar)dinero;
+                            break;
+                        case "2":
+                            Euro enEuros = (Euro)dinero;
+                            break;
+                        default:
+                            break;
+                    }
+                } while (opcion != "1" && opcion != "2");
+            }
+
+            
+            
 
             Console.ReadKey();
         }
