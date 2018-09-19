@@ -28,7 +28,7 @@ namespace Moneda
         }
         public static float GetCotizacion()
         {
-            return cotizRespectoDolar;
+            return Euro.cotizRespectoDolar;
         }
 
         // Operadores explícitos e implícitos

@@ -27,7 +27,7 @@ namespace Moneda
         }
         public static float GetCotizacion()
         {
-            return cotizRespectoDolar;
+            return Pesos.cotizRespectoDolar;
         }
 
         // Operadores explícitos e implícitos
