@@ -5,3 +5,9 @@ D:\##Cea\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro
 D:\##Cea\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.csproj.CoreCompileInputs.cache
 D:\##Cea\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.exe
 D:\##Cea\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\bin\Debug\Ejercicio Nro 13.exe.config
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\bin\Debug\Ejercicio Nro 13.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\bin\Debug\Ejercicio Nro 13.pdb
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.csprojResolveAssemblyReference.cache
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.exe
+C:\gitclone\Laboratorio-II-Clase-1\Clase 2\Ejercicio Nro 13\obj\Debug\Ejercicio Nro 13.pdb

@@ -27,33 +27,6 @@ namespace Ejercicio_Nro_17
         {
             return this.tinta;
         }
-        
-        public bool Pintar(int gasto, out string dibujo)
-        {
-            bool retorno;
-            dibujo = "*";
-            if (this.tinta >= gasto)
-            {
-                this.tinta -= (short)gasto;
-                for (int i = 0; i < gasto; i++)
-                {
-                    Console.Write(dibujo);
-                }
-                retorno = true;
-            }
-            else
-            {
-                retorno = false;
-            }
-            return retorno;
-        }
-
-        public void Recargar()
-        {
-            short tintaQueFalta = (short)(cantidadTintaMaxima - this.tinta);
-
-            SetTinta(tintaQueFalta);
-        }
 
         void SetTinta(short tinta)
         {
@@ -66,5 +39,21 @@ namespace Ejercicio_Nro_17
                 this.tinta = auxiliar;
             }
         }
+
+        public bool Pintar(int gasto, string dibujo)
+        {
+            Console.ForegroundColor = this.color;
+            Console.WriteLine(dibujo);
+            return true;
+        }
+
+        public void Recargar()
+        {
+            short tintaQueFalta = (short)(cantidadTintaMaxima - this.tinta);
+
+            this.SetTinta(tintaQueFalta);
+        }
+
+        
     }
 }
