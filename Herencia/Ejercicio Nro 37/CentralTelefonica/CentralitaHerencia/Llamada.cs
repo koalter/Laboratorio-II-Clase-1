@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace CentralitaHerencia
 {
+    public enum TipoLlamada
+    {
+        Local,
+        Provincial,
+        Todas
+    }
+
     public class Llamada
     {
-        public enum TipoLlamada
-        {
-            Local,
-            Provincial,
-            Todas
-        }
         // Campos
         protected float duracion;
         protected string nroDestino;
@@ -26,6 +27,7 @@ namespace CentralitaHerencia
             this.nroDestino = nroDestino;
             this.nroOrigen = nroOrigen;
         }
+
         #region Propiedades
         public float Duracion
         {
@@ -64,7 +66,28 @@ namespace CentralitaHerencia
             return sb.ToString();
         }
 
-        public int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2);
+        public static int OrdenarPorDuracion(Llamada llamada1, Llamada llamada2)
+        {
+            int retorno;
+
+            if (llamada1.duracion > llamada2.duracion)
+            {
+                retorno = 1;
+            }
+            else
+            {
+                if (llamada1.duracion < llamada2.duracion)
+                {
+                    retorno = -1;
+                }
+                else
+                {
+                    retorno = 0;
+                }
+            }
+
+            return retorno;
+        }
         #endregion
     }
 }
