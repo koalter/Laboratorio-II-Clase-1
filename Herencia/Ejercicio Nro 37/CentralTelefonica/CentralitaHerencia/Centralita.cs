@@ -57,18 +57,30 @@ namespace CentralitaHerencia
         private float CalcularGanancia(TipoLlamada tipo)
         {
             float ganancia = 0;
+            int length = this.listaDeLlamadas.Count();
+            
             switch (tipo)
             {
                 case TipoLlamada.Local:
-                    foreach (Local llamada in this.listaDeLlamadas)
+                    Local local;
+                    for (int i = 0; i < length; i++)
                     {
-                        ganancia += llamada.CostoLlamada;
+                        if (this.listaDeLlamadas[i].GetType() == typeof(Local))
+                        {
+                            local = (Local)this.listaDeLlamadas[i];
+                            ganancia += local.CostoLlamada;
+                        }
                     }
                     break;
                 case TipoLlamada.Provincial:
-                    foreach (Provincial llamada in this.listaDeLlamadas)
+                    Provincial provincial;
+                    for (int i = 0; i < length; i++)
                     {
-                        ganancia += llamada.CostoLlamada;
+                        if (this.listaDeLlamadas[i].GetType() == typeof(Provincial))
+                        {
+                            provincial = (Provincial)this.listaDeLlamadas[i];
+                            ganancia += provincial.CostoLlamada;
+                        }
                     }
                     break;
                 case TipoLlamada.Todas:
@@ -87,6 +99,27 @@ namespace CentralitaHerencia
             sb.AppendLine("Ganancias totales: " + this.GananciasPorTotal);
             sb.AppendLine("Ganancias locales: " + this.GananciasPorLocal);
             sb.AppendLine("Ganancias provinciales: " + this.GananciasPorProvincia);
+            sb.AppendLine("");
+            sb.AppendLine("LLAMADAS REALIZADAS:");
+            foreach (Llamada llamada in this.listaDeLlamadas)
+            {
+                sb.AppendLine("Duracion: " + llamada.Duracion + " segundos");
+                sb.AppendLine("Numero de origen: " + llamada.NroOrigen);
+                sb.AppendLine("Numero de destino: " + llamada.NroDestino);
+                sb.Append("Costo de la llamada: $");
+                if (llamada.GetType() == typeof(Provincial))
+                {
+                    Provincial provincial = (Provincial)llamada;
+                    sb.AppendLine(provincial.CostoLlamada.ToString());
+                }
+                else
+                {
+                    Local local = (Local)llamada;
+                    sb.AppendLine(local.CostoLlamada.ToString());
+                }
+                sb.AppendLine("------------------------------------------------------");
+            }
+            
 
             return sb.ToString();
         }
