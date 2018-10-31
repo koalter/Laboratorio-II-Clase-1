@@ -35,11 +35,15 @@ namespace EjercicioNro28
             }
 
             // Ordeno el diccionario por aparicion de palabras
-            diccionario.OrderBy(item => item.Value);
+            IEnumerable<KeyValuePair<string, int>> pepe = diccionario.OrderByDescending((item) =>
+            {
+                return item.Value;
+
+            });
 
             StringBuilder sb = new StringBuilder();
             int i = 0;
-            foreach (var item in diccionario)
+            foreach (KeyValuePair<string,int> item in pepe)
             {
                 if (i >= 3)
                 {
@@ -48,7 +52,7 @@ namespace EjercicioNro28
                 sb.AppendLine("Palabra: " + item.Key + " -- Apariciones: " + item.Value);
                 i++;
             }
-            
+
             MessageBox.Show(sb.ToString(), "TOP 3 de palabras con más apariciones");
         }
     }
