@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace IO
 {
@@ -24,14 +25,36 @@ namespace IO
         }
 
         #region Metodos
+        /*
         public bool Guardar(PuntoDat ruta)
         {
+        }
+        */
+        public bool Guardar(string ruta, PuntoDat obj)
+        {
+            bool retorno = this.ValidarArchivo(ruta);
 
+            if (retorno == true)
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream fs = new FileStream(ruta, FileMode.Create);
+                bf.Serialize(fs, obj.Contenido);
+                fs.Close();
+            }
+
+            return retorno;
         }
 
         public PuntoDat Leer(string ruta)
         {
-
+            if (this.ValidarArchivo(ruta))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                FileStream fs = new FileStream(ruta, FileMode.Open);
+                this.contenido = (string)bf.Deserialize(fs);
+                fs.Close();
+            }
+            return this;
         }
 
         protected override bool ValidarArchivo(string ruta)

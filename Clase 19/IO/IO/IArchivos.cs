@@ -8,17 +8,8 @@ namespace IO
 {
     public interface IArchivos<T>
     {
-        private bool Guardar(string ruta, T obj)
-        {
-            if (obj.GetType() == typeof(string))
-            {
+        bool Guardar(string ruta, T obj);
 
-            }
-        }
-
-        private T Leer(string ruta)
-        {
-
-        }
+        T Leer(string ruta);
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using IO;
 
 namespace Ejercicio_Nro_56
 {
@@ -23,18 +24,25 @@ namespace Ejercicio_Nro_56
             lblCaracteres.Text = String.Format("{0} caracteres", rtbTexto.Text.Length.ToString());
         }
 
-        string archivo;
+        PuntoTxt txt = new PuntoTxt();
+        PuntoDat dat = new PuntoDat();
 
         private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ofd.Filter = "Archivos de texto (*.txt)|*.txt|Archivos de datos (*.dat)|*.dat";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                StreamReader file = new StreamReader(ofd.FileName);
-                rtbTexto.Text = file.ReadToEnd();
-                archivo = ofd.FileName;
-                ofd.FileName = "";
-                file.Close();
+                switch (ofd.FilterIndex)
+                {
+                    case 0:
+                        
+                        rtbTexto.Text = txt.Leer(ofd.FileName);
+                        break;
+                    case 1:
+                        dat = dat.Leer(ofd.FileName);
+                        rtbTexto.Text = dat.Contenido;
+                        break;
+                }
                 guardarToolStripMenuItem.Enabled = true;
             }
 
@@ -42,9 +50,16 @@ namespace Ejercicio_Nro_56
 
         private void guardarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            StreamWriter file = new StreamWriter(archivo);
-            file.Write(rtbTexto.Text);
-            file.Close();
+            switch (sfd.FilterIndex)
+            {
+                case 0:
+                    txt.Guardar(sfd.FileName, rtbTexto.Text);
+                    break;
+                case 1:
+                    dat.Contenido = rtbTexto.Text;
+                    dat.Guardar(sfd.FileName, dat);
+                    break;
+            }
         }
 
         private void guardarComoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -52,12 +67,8 @@ namespace Ejercicio_Nro_56
             sfd.Filter = "Archivos de texto (*.txt)|*.txt|Archivo DAT (*.dat)|*.dat";
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                StreamWriter file = new StreamWriter(sfd.FileName);
-                file.Write(rtbTexto.Text);
-                archivo = sfd.FileName;
-                sfd.FileName = "";
-                file.Close();
                 guardarToolStripMenuItem.Enabled = true;
+                guardarToolStripMenuItem_Click(sender, e);
             }
         }
     }

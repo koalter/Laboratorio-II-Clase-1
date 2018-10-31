@@ -9,14 +9,34 @@ namespace IO
 {
     public class PuntoTxt : Archivo, IArchivos<string>
     {
+        /*
         public bool Guardar(string ruta)
         {
+        }
+        */
+        public bool Guardar(string ruta, string obj)
+        {
+            bool retorno = this.ValidarArchivo(ruta);
+            if (retorno == true)
+            {
+                StreamWriter sw = new StreamWriter(ruta);
+                sw.Write(obj);
+                sw.Close();
+            }
 
+            return retorno;
         }
 
         public string Leer(string ruta)
         {
-
+            string texto = "";
+            if (this.ValidarArchivo(ruta))
+            {
+                StreamReader stream = new StreamReader(ruta);
+                texto = stream.ReadToEnd();
+                stream.Close();
+            }
+            return texto;
         }
 
         protected override bool ValidarArchivo(string ruta)
