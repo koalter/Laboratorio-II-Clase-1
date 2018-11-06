@@ -1,0 +1,3 @@
+Crear un formulario que contenga 4 textbox y 4 botones.
+Cada textbox incrementara de forma automatica un numero
+y cada boton detendra a su correspondiente textbox.
