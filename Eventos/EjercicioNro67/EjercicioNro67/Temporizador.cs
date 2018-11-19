@@ -17,8 +17,23 @@ namespace EjercicioNro67
         #region Propiedades
         public bool Activo
         {
-            get;
-            set;
+            get
+            {
+                return this.Activo;
+            }
+            set
+            {
+                this.Activo = value;
+
+                if (this.Activo && !(this.hilo.IsAlive))
+                {
+                    this.hilo.Start();
+                }
+                else if (!(this.Activo) && this.hilo.IsAlive)
+                {
+                    this.hilo.Abort();
+                }
+            }
         }
         public int Intervalo
         {
@@ -35,7 +50,8 @@ namespace EjercicioNro67
         #region Metodos
         private void Corriendo()
         {
-
+            Thread.Sleep(this.Intervalo);
+            
         }
         #endregion
         #region Eventos

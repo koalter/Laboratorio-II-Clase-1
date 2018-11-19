@@ -23,7 +23,7 @@ namespace EjercicioNro60
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            conexion = new SqlConnection("Data Source=SMILER\\SQLEXPRESS;Initial Catalog=AdventureWorks2017;Integrated Security=True");
+            conexion = new SqlConnection("Data Source=MIPC-PC;Initial Catalog=AdventureWorks2014;Integrated Security=True");
             comando = new SqlCommand();
             comando.CommandType = System.Data.CommandType.Text;
             comando.Connection = conexion;
