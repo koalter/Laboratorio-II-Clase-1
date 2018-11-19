@@ -33,6 +33,7 @@
             this.testDelegadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mostrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosAlumnoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,7 +41,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.altaToolStripMenuItem,
-            this.mostrarToolStripMenuItem});
+            this.mostrarToolStripMenuItem,
+            this.datosAlumnoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(781, 24);
@@ -69,6 +71,7 @@
             this.alumnoToolStripMenuItem.Name = "alumnoToolStripMenuItem";
             this.alumnoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alumnoToolStripMenuItem.Text = "Alumno";
+            this.alumnoToolStripMenuItem.Click += new System.EventHandler(this.alumnoToolStripMenuItem_Click);
             // 
             // mostrarToolStripMenuItem
             // 
@@ -78,6 +81,14 @@
             this.mostrarToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.mostrarToolStripMenuItem.Text = "Mostrar";
             this.mostrarToolStripMenuItem.Click += new System.EventHandler(this.mostrarToolStripMenuItem_Click);
+            // 
+            // datosAlumnoToolStripMenuItem
+            // 
+            this.datosAlumnoToolStripMenuItem.Enabled = false;
+            this.datosAlumnoToolStripMenuItem.Name = "datosAlumnoToolStripMenuItem";
+            this.datosAlumnoToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
+            this.datosAlumnoToolStripMenuItem.Text = "Datos Alumno";
+            this.datosAlumnoToolStripMenuItem.Click += new System.EventHandler(this.datosAlumnoToolStripMenuItem_Click);
             // 
             // FrmPrincipal
             // 
@@ -105,6 +116,7 @@
         private System.Windows.Forms.ToolStripMenuItem testDelegadoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mostrarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem datosAlumnoToolStripMenuItem;
     }
 }
 
