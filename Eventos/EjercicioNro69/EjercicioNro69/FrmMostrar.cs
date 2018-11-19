@@ -24,5 +24,10 @@ namespace EjercicioNro69
         {
             lblEtiqueta.Text = dato;
         }
+
+        public void ActualizarFoto(string ruta)
+        {
+            pictureBox1.ImageLocation = ruta;
+        }
     }
 }

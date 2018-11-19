@@ -30,6 +30,8 @@
         {
             this.txtDatos = new System.Windows.Forms.TextBox();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnBuscarFoto = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // txtDatos
@@ -49,11 +51,26 @@
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnBuscarFoto
+            // 
+            this.btnBuscarFoto.Location = new System.Drawing.Point(12, 100);
+            this.btnBuscarFoto.Name = "btnBuscarFoto";
+            this.btnBuscarFoto.Size = new System.Drawing.Size(217, 58);
+            this.btnBuscarFoto.TabIndex = 2;
+            this.btnBuscarFoto.Text = "Buscar Foto";
+            this.btnBuscarFoto.UseVisualStyleBackColor = true;
+            this.btnBuscarFoto.Click += new System.EventHandler(this.btnBuscarFoto_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // FrmTestDelegados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 106);
+            this.ClientSize = new System.Drawing.Size(239, 170);
+            this.Controls.Add(this.btnBuscarFoto);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.txtDatos);
             this.MaximizeBox = false;
@@ -68,5 +85,7 @@
 
         private System.Windows.Forms.TextBox txtDatos;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnBuscarFoto;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

@@ -35,6 +35,7 @@ namespace EjercicioNro69
             frmMostrar.Show();
 
             frmTestDelegados.EventoString += frmMostrar.ActualizarNombre;
+            frmTestDelegados.EventoFoto += frmMostrar.ActualizarFoto;
         }
     }
 }
