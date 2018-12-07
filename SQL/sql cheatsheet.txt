@@ -1,0 +1,26 @@
+using System.Data.SqlClient;
+
+String connectionStr = "Data Source=[Instancia Del Servidor]; Initial Catalog=[Nombre de la Base de Datos];Integrated Security=True";
+
+SqlConnection conexion;
+conexion = new SqlConnection(connectionStr);
+
+SqlCommand comando;
+comando = new SqlCommand();
+comando.CommandType = System.Data.CommandType.Text;
+comando.Connection = conexion;
+
+// Consulta SELECT
+comando.CommandText = "SELECT nombre FROM Personas";
+conexion.Open();
+SqlDataReader oDr = comando.ExecuteReader();
+while (oDr.Read()) { string aux = oDr["nombre"].ToString(); }
+
+// Manipulacion
+String consulta;
+consulta = "UPDATE Personas SET nombre = 'Fer' WHERE id = 1";
+//consulta = "INSERT INTO Personas (nombre)  VALUES('Pedro')";
+//consulta = "DELETE FROM Personas WHERE id = 1";
+comando.CommandText = consulta;
+conexion.Open();
+comando.ExecuteNonQuery();
